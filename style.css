@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration:none;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background:url("imgs/clouds.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:3% 5%;
+}
+header h2{
+    font-family: 'Comfortaa', cursive;
+    font-size: 30px;
+    color:#040038dc;
+}
+header div a{
+    margin-left:50px;
+    font-size:20px;
+    color:#040038dc;
+    border-bottom:solid 2px transparent;
+    transition: all 0.3s ease-in;
+}
+header div a:hover{
+    border-bottom:solid 2px #a18cd1;
+}
+header i{
+    font-size:35px;
+    cursor: pointer;
+    display:none;
+    color: #040038dc;
+}
+.arrow{
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+.manga-widge{
+    opacity: 0;
+    height: 350px;
+    width: 300px;
+    background-color:#eee;
+    position: relative;
+    float: right;
+    margin-right: 14rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 0;
+    padding-top: 20px;
+    box-shadow: 0 0 25px rgba(0,0,0,.1);
+}
+.tri{
+    background-color: #eee;
+    height: 30px;
+    width: 35px;
+    position: absolute;
+    top: -20px;
+    left: 45%;
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.manga-box{
+    width:100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns:90%;
+    grid-template-rows:repeat(3,90px);
+    gap: 15px;
+}
+.manga-box img{
+    border-radius: 5px;
+}
+.manga-box div{
+    width: 100%;
+    padding: 5px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.manga-box div .text{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+}
+.text p{
+    font-size:15px;
+}
+.btn{
+    cursor: pointer;
+    text-align: center;
+    background-color: rgba(192, 176, 178, 0.525);
+    padding:5px;
+    width:40%;
+    border-radius:20px;
+    margin: 10px 27% 0 25%;
+}
+.btn:active{
+    background-color: rgba(78, 55, 58, 0.525);
+}
+.opacity{
+    opacity: 1;
+}
+
+.series-widge{
+    opacity: 0;
+    height: 350px;
+    width: 300px;
+    background-color:#eee;
+    position: relative;
+    float: right;
+    margin-right: -27rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 0;
+    padding-top: 20px;
+    box-shadow: 0 0 25px rgba(0,0,0,.1);
+}
+.series-tri{
+    background-color: #eee;
+    height: 30px;
+    width: 35px;
+    position: absolute;
+    top: -20px;
+    left: 45%;
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.series-box{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    padding:10px;
+}
+.series-box .outer{
+    display: flex;
+}
+.series-box img{
+    border-radius:10px;
+}
+.series-box img{
+    width: 30%;
+}
+.inner{
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.inner a{
+    cursor: pointer;
+    text-align: center;
+    background-color: rgb(255, 38, 63);
+    padding:3px 5px;
+    width:35%;
+    border-radius:20px;
+    color: #fff;
+}
+.btn-sec{
+    cursor: pointer;
+    text-align: center;
+    background-color: rgba(192, 176, 178, 0.525);
+    padding:5px;
+    width:40%;
+    border-radius:20px;
+    margin: 10px 27% 0 25%;
+}
+.btn-sec:active{
+    background-color: rgba(78, 55, 58, 0.525);
+}
+.opacity-series{
+    opacity: 1;
+}
+/* font-family: 'Comfortaa', cursive;
+font-family: 'Poppins', sans-serif; */
+@media screen and (width <= 480px) {
+    body {
+        width:100vw;
+        background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+        overflow: hidden;
+    }
+    header{
+        padding:3% 5%;
+    } 
+    header h2{
+        font-size: 15px;
+    }
+    header div{
+        background-color:rgba(255,255,255,1);
+    }
+    .nav{
+        padding: 15px 35px;
+        position: absolute;
+        right: -100%;
+        top: 10%;
+        text-align: center;
+        display:none;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        gap: 10px;
+        transition:all .3s ease-in;
+    }
+    header div a{
+        font-size:15px;
+        margin: 0;
+    }
+    header i{
+        display: block;
+        font-size: 20px;
+    }
+    .arrow ion-icon{
+         display: none;
+    }
+    .manga-widge{
+        display: none;
+    }
+  }
+
+@media screen and (320px <= width <= 480px) {
+    body {
+        background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+        width:100vw;
+        overflow: hidden;
+
+    }
+    header{
+        padding:3% 5%;
+    }
+    header h2{
+        font-size: 15px;
+    }
+    header div{
+        background-color:rgba(255,255,255,1);
+    }
+    .nav{
+        padding: 15px 35px;
+        position: absolute;
+        right: -50%;
+        top: 10%;
+        text-align: center;
+        display:none;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        gap: 10px;
+        transition:all .3s ease-in;
+    }
+    header div a{
+        font-size:15px;
+        margin: 0;
+    }
+    header i{
+        display: block;
+        font-size: 20px;
+    }
+    .open{
+        padding: 15px 35px;
+        position: absolute;
+        right: 5%;
+        top: 10%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        align-items: center;
+    }
+    .arrow ion-icon{
+        display: none;
+   }
+   .manga-widge{
+    display: none;
+}
+  }
+  @media screen and (481px <= width <= 1024px){
+    body {
+        background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%); 
+        width: 100vw;
+        overflow: hidden;
+    }
+    header{
+        padding:3% 5%;
+    }
+    header h2{
+        font-size: 15px;
+    }
+    header div{
+        display: flex;
+    }
+    header div a{
+        font-size: 15px;
+        display:block;
+        margin-left: 30px;
+    }
+    header i{
+        display:none;
+        font-size: 20px;
+    }
+    .arrow ion-icon{
+        display: none;
+    }
+    .manga-widge{
+        display: none;
+    }
+  }
